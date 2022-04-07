@@ -3,5 +3,10 @@
     "category": "api",
     "resourceName": "amplifyapp",
     "service": "AppSync"
+  },
+  {
+    "category": "auth",
+    "resourceName": "amplifyapp9f6e6d7f",
+    "service": "Cognito"
   }
 ]

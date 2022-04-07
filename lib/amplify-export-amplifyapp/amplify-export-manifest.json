@@ -32,6 +32,56 @@
             "loadNestedStacks": {}
           }
         }
+      },
+      "authamplifyapp9f6e6d7f": {
+        "templateFile": "auth/amplifyapp9f6e6d7f/amplifyapp9f6e6d7f-cloudformation-template.json",
+        "parameters": {
+          "identityPoolName": "amplifyapp9f6e6d7f_identitypool_9f6e6d7f",
+          "allowUnauthenticatedIdentities": false,
+          "resourceNameTruncated": "amplif9f6e6d7f",
+          "userPoolName": "amplifyapp9f6e6d7f_userpool_9f6e6d7f",
+          "autoVerifiedAttributes": [
+            "email"
+          ],
+          "mfaConfiguration": "OFF",
+          "mfaTypes": [
+            "SMS Text Message"
+          ],
+          "smsAuthenticationMessage": "Your authentication code is {####}",
+          "smsVerificationMessage": "Your verification code is {####}",
+          "emailVerificationSubject": "Your verification code",
+          "emailVerificationMessage": "Your verification code is {####}",
+          "defaultPasswordPolicy": false,
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [],
+          "requiredAttributes": [
+            "email"
+          ],
+          "aliasAttributes": [],
+          "userpoolClientGenerateSecret": false,
+          "userpoolClientRefreshTokenValidity": 30,
+          "userpoolClientWriteAttributes": [
+            "email"
+          ],
+          "userpoolClientReadAttributes": [
+            "email"
+          ],
+          "userpoolClientLambdaRole": "amplif9f6e6d7f_userpoolclient_lambda_role",
+          "userpoolClientSetAttributes": false,
+          "sharedId": "9f6e6d7f",
+          "resourceName": "amplifyapp9f6e6d7f",
+          "authSelections": "identityPoolAndUserPool",
+          "useDefault": "default",
+          "userPoolGroupList": [],
+          "serviceName": "Cognito",
+          "usernameCaseSensitive": false,
+          "useEnabledMfas": true,
+          "breakCircularDependency": true,
+          "dependsOn": [],
+          "env": "staging"
+        },
+        "preserveLogicalIds": true,
+        "loadNestedStacks": {}
       }
     }
   }

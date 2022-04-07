@@ -152,13 +152,7 @@
         }
       }
     },
-    "apiamplifyapp": {
-      "Type": "AWS::CloudFormation::Stack",
-      "Properties": {
-        "Parameters": {}
-      }
-    },
-    "authamplifyapp9f6e6d7f": {
+    "authamplifyapp151ab854": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
         "Parameters": {
@@ -181,7 +175,7 @@
       "DependsOn": [
         "AuthRole",
         "UnauthRole",
-        "authamplifyapp9f6e6d7f"
+        "authamplifyapp151ab854"
       ],
       "Type": "AWS::Lambda::Function",
       "Properties": {
@@ -276,7 +270,7 @@
         },
         "idpId": {
           "Fn::GetAtt": [
-            "authamplifyapp9f6e6d7f",
+            "authamplifyapp151ab854",
             "Outputs.IdentityPoolId"
           ]
         },

@@ -9,37 +9,13 @@
     },
     "preserveLogicalIds": true,
     "loadNestedStacks": {
-      "apiamplifyapp": {
-        "templateFile": "api/amplifyapp/cloudformation-template.json",
+      "authamplifyapp151ab854": {
+        "templateFile": "auth/amplifyapp151ab854/amplifyapp151ab854-cloudformation-template.json",
         "parameters": {
-          "AppSyncApiName": "amplifyapp",
-          "DynamoDBBillingMode": "PAY_PER_REQUEST",
-          "DynamoDBEnableServerSideEncryption": false,
-          "S3DeploymentBucket": "amplify-amplify12bd24f189da4-staging-114752-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/41e954e143f54bfad41478f28c66897a040d825a",
-          "env": "staging"
-        },
-        "preserveLogicalIds": true,
-        "loadNestedStacks": {
-          "CustomResourcesjson": {
-            "templateFile": "api/amplifyapp/amplify-appsync-files/stacks/CustomResources.json",
-            "preserveLogicalIds": true,
-            "loadNestedStacks": {}
-          },
-          "House": {
-            "templateFile": "api/amplifyapp/amplify-appsync-files/stacks/House.json",
-            "preserveLogicalIds": true,
-            "loadNestedStacks": {}
-          }
-        }
-      },
-      "authamplifyapp9f6e6d7f": {
-        "templateFile": "auth/amplifyapp9f6e6d7f/amplifyapp9f6e6d7f-cloudformation-template.json",
-        "parameters": {
-          "identityPoolName": "amplifyapp9f6e6d7f_identitypool_9f6e6d7f",
+          "identityPoolName": "amplifyapp151ab854_identitypool_151ab854",
           "allowUnauthenticatedIdentities": false,
-          "resourceNameTruncated": "amplif9f6e6d7f",
-          "userPoolName": "amplifyapp9f6e6d7f_userpool_9f6e6d7f",
+          "resourceNameTruncated": "amplif151ab854",
+          "userPoolName": "amplifyapp151ab854_userpool_151ab854",
           "autoVerifiedAttributes": [
             "email"
           ],
@@ -66,10 +42,10 @@
           "userpoolClientReadAttributes": [
             "email"
           ],
-          "userpoolClientLambdaRole": "amplif9f6e6d7f_userpoolclient_lambda_role",
+          "userpoolClientLambdaRole": "amplif151ab854_userpoolclient_lambda_role",
           "userpoolClientSetAttributes": false,
-          "sharedId": "9f6e6d7f",
-          "resourceName": "amplifyapp9f6e6d7f",
+          "sharedId": "151ab854",
+          "resourceName": "amplifyapp151ab854",
           "authSelections": "identityPoolAndUserPool",
           "useDefault": "default",
           "userPoolGroupList": [],
